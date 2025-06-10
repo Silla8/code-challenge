@@ -1,9 +1,9 @@
 import "../styles/ProgressBar.css"
-import { LuTruck } from "react-icons/lu";
+import { FaTruck } from "react-icons/fa6";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { GrLocation } from "react-icons/gr";
 import { FiShield } from "react-icons/fi";
-import { LuCalendar } from "react-icons/lu";
+import { FaCalendar } from "react-icons/fa";
 import { FiCreditCard } from "react-icons/fi";
 
 export default function ProgressBar(){
@@ -22,7 +22,7 @@ export default function ProgressBar(){
             </div>
             <div className="line-blue"/>
             <div className="progress-item">
-                <LuTruck style={{ color: '#2563EB' }} size={30}/>
+                <FaTruck style={{ color: '#2563EB' }} size={30}/>
                 <p>Select Skip</p>
             </div>
             <div className="line-grey"/>
@@ -32,7 +32,7 @@ export default function ProgressBar(){
             </div>
             <div className="line-grey"/>
             <div className="progress-item">
-                <LuCalendar style={{ color: '#9CA3AF' }} size={30}/>
+                <FaCalendar style={{ color: '#9CA3AF' }} size={30}/>
                 <p>Choose Date</p>
             </div>
             <div className="line-grey"/>

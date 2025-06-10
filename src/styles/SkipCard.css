@@ -1,0 +1,11 @@
+
+
+.skip-card{
+
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-color: #E5E7EB;
+    border-radius: 10px;
+    border: 1px solid #E5E7EB;
+}

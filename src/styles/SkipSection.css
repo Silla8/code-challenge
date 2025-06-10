@@ -1,0 +1,19 @@
+
+
+.skip-section{
+
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 30px;
+}
+
+.skip-list{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}

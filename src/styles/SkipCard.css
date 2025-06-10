@@ -86,3 +86,10 @@
     font-size: 11px;
     margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+    .skip-card{
+        min-width: 200px;
+        max-width: 200px;
+    }
+}

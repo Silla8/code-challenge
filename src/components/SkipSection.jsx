@@ -26,10 +26,10 @@ export default function SkipSection({skips}){
     return (
         <div className="skip-section">
             <div  className="navigation-btn">
-                <PiArrowFatLinesLeft style={{ color: '#2563EB' }} onClick={()=>scrollLeft()} size={60}/>
+                <PiArrowFatLinesLeft className="arrows" style={{ color: '#2563EB', }} onClick={()=>scrollLeft()} size={60}/>
                 {selectedID!=0 && <button className="back-btn">Back</button>}
             </div>
-            <div className="skip-list" ref={divRef} style={{overflowX: skips.length<=4 ? 'hidden' : 'scroll'}}>
+            <div className="skip-list" ref={divRef} style={{overflowX: skips.length<=4 ? 'hidden' : 'scroll',}}>
                 {skips.length!=0 ? 
                     (skips.map((skip)=> <SkipCard selectedID={selectedID} setSelectedID={setSelectedID} skip={skip} key={skip.id}/>)) : 
                     <div style={{alignSelf: 'center', width: '100%', }}>
@@ -38,7 +38,7 @@ export default function SkipSection({skips}){
                 }
             </div>
             <div className="navigation-btn">
-                <PiArrowFatLinesRight style={{ color: '#2563EB' }} onClick={()=>scrollRight()} size={60}/>
+                <PiArrowFatLinesRight className="arrows" style={{ color: '#2563EB' }} onClick={()=>scrollRight()} size={60}/>
                 {selectedID!=0 && <button className="continue-btn">Continue</button>}
             </div>
         </div>

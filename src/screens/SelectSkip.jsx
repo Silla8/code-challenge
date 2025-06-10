@@ -7,7 +7,7 @@ import {data} from '../data/data'
 
 function SelectSkip(){
     const [skips, setSkips] = useState(data());
-    console.log(skips)
+    
     return (
         <div style={{alignSelf: 'center'}}>
             <ProgressBar />

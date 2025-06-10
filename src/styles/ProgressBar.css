@@ -6,6 +6,7 @@
     align-items: center;
     column-gap: 10px;
     flex-shrink: 1;
+    justify-content: center;
 }
 
 .progress-item{

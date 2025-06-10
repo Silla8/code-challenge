@@ -1,15 +1,18 @@
+import { useState } from "react";
 import ProgressBar from "../components/ProgressBar";
 import SearchSection from "../components/SearchSection";
 import SkipSection from "../components/SkipSection";
+import {data} from '../data/data'
 
 
 function SelectSkip(){
-
+    const [skips, setSkips] = useState(data());
+    console.log(skips)
     return (
-        <div>
+        <div style={{alignSelf: 'center'}}>
             <ProgressBar />
-            <SearchSection />
-            <SkipSection />
+            <SearchSection setSkips={setSkips} />
+            <SkipSection skips={skips} />
         </div>
     );
 }

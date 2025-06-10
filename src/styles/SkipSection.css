@@ -16,4 +16,38 @@
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+    overflow-x: scroll;
+    padding: 10px;
+    height: 350px;
+    
+    
+   
+}
+
+.back-btn{
+    background-color: transparent;
+    border: 1px solid #E5E7EB;;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: medium;
+}
+
+.continue-btn{
+    background-color: #2563EB;
+    border: 1px solid #E5E7EB;;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: medium;
+    color: white;
+}
+
+.navigation-btn{
+ 
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 250px;
+    
 }

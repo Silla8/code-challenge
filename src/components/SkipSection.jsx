@@ -1,4 +1,5 @@
-
+import { PiArrowFatLinesLeft } from "react-icons/pi";
+import { PiArrowFatLinesRight } from "react-icons/pi";
 import '../styles/SkipSection.css'
 import SkipCard from "./SkipCard";
 import { useRef, useState } from "react";
@@ -25,7 +26,7 @@ export default function SkipSection({skips}){
     return (
         <div className="skip-section">
             <div  className="navigation-btn">
-                <P className="arrows" style={{ color: '#2563EB', }} onClick={()=>scrollLeft()} size={60}>⬅️</p>
+                <PiArrowFatLinesLeft className="arrows" style={{ color: '#2563EB', }} onClick={()=>scrollLeft()} size={60}/>
                 {selectedID!=0 && <button className="back-btn">Back</button>}
             </div>
             <div className="skip-list" ref={divRef} style={{overflowX: skips.length<=4 ? 'hidden' : 'scroll',}}>
@@ -37,7 +38,7 @@ export default function SkipSection({skips}){
                 }
             </div>
             <div className="navigation-btn">
-                <p className="arrows" style={{ color: '#2563EB' }} onClick={()=>scrollRight()} size={60}>➡️</p>
+                <PiArrowFatLinesRight className="arrows" style={{ color: '#2563EB' }} onClick={()=>scrollRight()} size={60}/>
                 {selectedID!=0 && <button className="continue-btn">Continue</button>}
             </div>
         </div>

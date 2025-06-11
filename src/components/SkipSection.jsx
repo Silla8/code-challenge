@@ -25,7 +25,7 @@ export default function SkipSection({skips}){
     return (
         <div className="skip-section">
             <div  className="navigation-btn">
-                <P className="arrows" style={{ color: '#2563EB', }} onClick={()=>scrollLeft()} size={60}>⬅️</p>
+                <p className="arrows" style={{ color: '#2563EB', }} onClick={()=>scrollLeft()} size={60}>⬅️</p>
                 {selectedID!=0 && <button className="back-btn">Back</button>}
             </div>
             <div className="skip-list" ref={divRef} style={{overflowX: skips.length<=4 ? 'hidden' : 'scroll',}}>
